@@ -18,7 +18,7 @@ let displayMeals = meals => {
                     <p class="card-text">Meal ID: ${meal.idMeal}</p>
                     <p class"card-text">Origin: ${meal.strArea}</p>
                     <p class"card-text">Category: ${meal.strCategory}</p>
-                    <button class="btn btn-primary">Instructions</button>
+                    <button id="btn-meal-instructions" class="btn btn-primary">Instructions</button>
                 </div>
             </div>
         `;
