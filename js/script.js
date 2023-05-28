@@ -7,6 +7,7 @@ let loadMeals = (value = 'fish') => {
 
 let displayMeals = meals => {
     let mealsContainer = document.getElementById('meals-container');
+    mealsContainer.innerText = '';
     meals.forEach(meal => {
         console.log(meal);
         let mealDiv = document.createElement('div');
