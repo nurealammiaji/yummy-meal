@@ -1,4 +1,4 @@
-let loadMeals = value => {
+let loadMeals = (value = 'fish') => {
     let url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${value}`;
     fetch(url)
     .then(res => res.json())
@@ -33,4 +33,4 @@ let searchMeals = () => {
     loadMeals(searchField);
 }
 
-loadMeals('fish');
+loadMeals();
