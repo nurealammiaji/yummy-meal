@@ -1,5 +1,5 @@
-let loadMeals = () => {
-    fetch('https://www.themealdb.com/api/json/v1/1/search.php?s=fish')
+let loadMeals = fish => {
+    fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${fish}`)
     .then(res => res.json())
     .then(data => displayMeals(data.meals))
 }
@@ -26,4 +26,8 @@ let displayMeals = meals => {
     })
 }
 
-loadMeals();
+let searchMeals = () => {
+    let searchField = document.getElementById("meal-search").value;
+}
+
+loadMeals(search);
